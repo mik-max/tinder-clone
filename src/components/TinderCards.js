@@ -9,9 +9,9 @@ function TinderCards() {
        const fetchData = async() => {
           setIsLoading(true)
           try{
-               fetch(`${baseUrl}/tinder/cards`).then(response =>{return response.json()}).then((data) => {
+               fetch(`${baseUrl}tinder/cards`).then(response =>{return response.json()}).then((data) => {
                     setPeople(data);
-                    console.log(data);
+                    //console.log(data);
                })
           }
           catch(error){
